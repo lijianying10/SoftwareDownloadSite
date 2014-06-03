@@ -23,5 +23,7 @@
 )
 
 ##obj SystemSetting(
-
+* list_Recommand
+* list_SoftWare_rank
+* list_useful
 )
