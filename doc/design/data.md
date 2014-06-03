@@ -1,4 +1,4 @@
-#obj: SoftWare(
+##obj: SoftWare(
 * ID
 * Title
 * size
@@ -10,7 +10,18 @@
 * plateform
 * URL_baidu
 * URL_offical
+* Introduction
+* Comment
 * other(json)
 )
 
-#obj
+##obj User(
+* UID
+* PWD
+* Basic_info
+* preference
+)
+
+##obj SystemSetting(
+
+)
