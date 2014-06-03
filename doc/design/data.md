@@ -5,7 +5,7 @@
 * language
 * download_times
 * comment_times
-* uptime_date
+* uploadtime_date
 * offical_site
 * plateform
 * URL_baidu
