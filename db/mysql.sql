@@ -18,6 +18,7 @@ create table tbl_software(
 
 create table tbl_User(
 	u_UID int unsigned not null auto_increment,
+    u_Name varchar(250) not null,
 	u_PWD varchar(250) not null,
 	u_Basic_info text,
 	u_preference text,
