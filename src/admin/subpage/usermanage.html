@@ -15,12 +15,12 @@
 
 </head>
 <body>
-    <h2>Edit form in expanded row details</h2>
-    <p>Click the expand button to expand a detail form.</p>
+    <h2>欢迎来到用户管理</h2>
+    <p>点击下面表格操作</p>
     
     
-    <table id="dg" title="My Users" style="width:700px;height:250px"
-            url="../../business/get_users.php"
+    <table id="dg" title="系统用户" style="width:700px;height:550px"
+            url="../../business/users/get_users.php"
             toolbar="#toolbar" pagination="true"
             fitColumns="true" singleSelect="true">
         <thead>
@@ -34,10 +34,21 @@
         </thead>
     </table>
     <div id="toolbar">
-        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newItem()">New</a>
-        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyItem()">Destroy</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newItem()">添加</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyItem()">删除</a>
+        <span>用户名</span>
+        <input id="name" style="line-height:26px;border:1px solid #ccc">
+        <a href="#" class="easyui-linkbutton" plain="true" onclick="doSearch()">搜索</a>
     </div>
     <script type="text/javascript">
+
+        function doSearch(){
+            console.log('codehere');
+            $('#tt').datagrid('load',{
+                name: $('#nameid').val()
+            });
+        }
+
         $(function(){
             $('#dg').datagrid({
                 view: detailview,
@@ -49,7 +60,7 @@
                     ddv.panel({
                         border:false,
                         cache:true,
-                        href:'show_form.php?index='+index,
+                        href:'../../business/users/show_form.php?index='+index,
                         onLoad:function(){
                             $('#dg').datagrid('fixDetailRowHeight',index);
                             $('#dg').datagrid('selectRow',index);
@@ -62,20 +73,32 @@
         });
         function saveItem(index){
             var row = $('#dg').datagrid('getRows')[index];
-            var url = row.isNewRecord ? 'save_user.php' : 'update_user.php?id='+row.id;
+            var url = row.isNewRecord ? 'save_user.php' : 'update_user.php?id='+row.ID;
             $('#dg').datagrid('getRowDetail',index).find('form').form('submit',{
-                url: url,
+                url: '../../business/users/'+url,
                 onSubmit: function(){
+                    console.log('this'+$(this).form('validate'));
                     return $(this).form('validate');
                 },
                 success: function(data){
-                    data = eval('('+data+')');
-                    data.isNewRecord = false;
-                    $('#dg').datagrid('collapseRow',index);
-                    $('#dg').datagrid('updateRow',{
-                        index: index,
-                        row: data
-                    });
+//                    data = eval('('+data+')');
+//                    console.log(data);
+//                    data.isNewRecord = false;
+//                    $('#dg').datagrid('collapseRow',index);
+//                    $('#dg').datagrid('updateRow',{
+//                        index: index,
+//                        row: data
+//                    });
+                    if(data==1)
+                    {
+                        $.messager.confirm("status","save success");
+                    }
+                    else
+                    {
+                        $.messager.confirm("status","failed");
+                    }
+//                    $('#dg').datagrid('collapseRow',index);
+                    $('#dg').datagrid('reload');
                 }
             });
         }
@@ -92,9 +115,23 @@
             if (row){
                 $.messager.confirm('Confirm','Are you sure you want to remove this user?',function(r){
                     if (r){
+
                         var index = $('#dg').datagrid('getRowIndex',row);
-                        $.post('destroy_user.php',{id:row.id},function(){
-                            $('#dg').datagrid('deleteRow',index);
+                        index++;
+                        $.post('../../business/users/destroy_user.php',
+                                {id:index},
+                                function(data){
+
+                                    if(data==1)
+                                    {
+                                        $.messager.confirm("status","delete success");
+
+                                    }
+                                    else
+                                    {
+                                        $.messager.confirm("status","failed");
+                                    }
+                                    $('#dg').datagrid('reload');
                         });
                     }
                 });

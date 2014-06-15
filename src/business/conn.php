@@ -1,6 +1,11 @@
 <?php
-$con=mysql_connect("localhost","root")or die("数据库没有连接上");
-//选择一个数据库
-mysql_select_db("SoftwareDownloadSite",$con)  or die("数据库不存在");
-mysql_query("set names gbk");
+/**
+ * Created by PhpStorm.
+ * User: lijianying
+ * Date: 14-6-15
+ * Time: 下午9:01
+ */
+include 'notorm/NotORM.php';
+$pdo = new PDO("mysql:host=127.0.0.1;dbname=softwaredownloadsite;",'root','1');
+$db = new NotORM($pdo);
 ?>
