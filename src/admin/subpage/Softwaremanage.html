@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Build CRUD Application with edit form in expanded row details - jQuery EasyUI Demo</title>
+
+	<link rel="stylesheet" type="text/css" href="../../js_lib/easyui/themes/bootstrap/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../../js_lib/easyui/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="../../js_lib/easyui/demo.css">
+    
+    <script type="text/javascript" src="../../js_lib/easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js_lib/easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="../../js_lib/easyui/datagrid-detailview.js"></script>
+
+
+</head>
+<body>
+    <h2>欢迎来到软件管理</h2>
+    <p>点击下面表格操作</p>
+    
+    
+    <table id="dg" title="系统软件" style="width:700px;height:550px"
+            url="../../business2/index.php/home/Software/getall"
+            toolbar="#toolbar" pagination="true"
+            fitColumns="true" singleSelect="true">
+        <thead>
+            <tr>
+                <th field="s_id" width="50">ID</th>
+                <th field="s_Title" width="50">软件名字</th>
+                <th field="s_size" width="50">大小（MB）</th>
+                <th field="s_download_times" width="50">下载次数</th>
+                <th field="s_URL_baidu" width="50">网盘地址</th>
+            </tr>
+        </thead>
+    </table>
+    <div id="toolbar">
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newItem()">添加</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyItem()">删除</a>
+        <span>用户名</span>
+        <input id="nameid" style="line-height:26px;border:1px solid #ccc">
+        <a href="#" class="easyui-linkbutton" plain="true" onclick="doSearch()">搜索</a>
+    </div>
+    <script type="text/javascript">
+
+        function doSearch(){
+            console.log('codehere');
+            $('#dg').datagrid('reload',{
+                name: $('#nameid').val()
+            });
+        }
+
+        $(function(){
+            $('#dg').datagrid({
+                view: detailview,
+                detailFormatter:function(index,row){
+                    return '<div class="ddv"></div>';
+                },
+                onExpandRow: function(index,row){
+                    var ddv = $(this).datagrid('getRowDetail',index).find('div.ddv');
+                    var rowk = $('#dg').datagrid('getRows')[index];
+                    ddv.panel({
+                        border:false,
+                        cache:true,
+                        href:'../../business2/index.php/home/Software/show_form?index='+index+'&RowIndex='+rowk.ID,
+                        onLoad:function(){
+                            $('#dg').datagrid('fixDetailRowHeight',index);
+                            $('#dg').datagrid('selectRow',index);
+                            $('#dg').datagrid('getRowDetail',index).find('form').form('load',row);
+                        }
+                    });
+                    $('#dg').datagrid('fixDetailRowHeight',index);
+                }
+            });
+        });
+        function saveItem(index){
+            var row = $('#dg').datagrid('getRows')[index];
+            var url = row.isNewRecord ? 'save_user.php' : 'update_user.php?id='+row.ID;
+            $('#dg').datagrid('getRowDetail',index).find('form').form('submit',{
+                url: '../../business/users/'+url,
+                onSubmit: function(){
+                    console.log('this'+$(this).form('validate'));
+                    return $(this).form('validate');
+                },
+                success: function(data){
+//                    data = eval('('+data+')');
+//                    console.log(data);
+//                    data.isNewRecord = false;
+//                    $('#dg').datagrid('collapseRow',index);
+//                    $('#dg').datagrid('updateRow',{
+//                        index: index,
+//                        row: data
+//                    });
+                    if(data==1)
+                    {
+//                        $.messager.confirm("status","save success");
+                    }
+                    else
+                    {
+//                        $.messager.confirm("status","failed");
+                    }
+//                    $('#dg').datagrid('collapseRow',index);
+                    $('#dg').datagrid('reload');
+                }
+            });
+        }
+        function cancelItem(index){
+            var row = $('#dg').datagrid('getRows')[index];
+            if (row.isNewRecord){
+                $('#dg').datagrid('deleteRow',index);
+            } else {
+                $('#dg').datagrid('collapseRow',index);
+            }
+        }
+        function destroyItem(){
+            var row = $('#dg').datagrid('getSelected');
+            if (row){
+                $.messager.confirm('Confirm','Are you sure you want to remove this user?',function(r){
+                    if (r){
+
+                        var index = $('#dg').datagrid('getRowIndex',row);
+                        var rowk = $('#dg').datagrid('getRows')[index];
+                        $.post('../../business/users/destroy_user.php',
+                                {id:rowk.ID},
+                                function(data){
+
+                                    if(data==1)
+                                    {
+//                                        $.messager.confirm("status","delete success");
+
+                                    }
+                                    else
+                                    {
+//                                        $.messager.confirm("status","failed");
+                                    }
+                                    $('#dg').datagrid('reload');
+                        });
+                    }
+                });
+            }
+        }
+        function newItem(){
+            $('#dg').datagrid('appendRow',{isNewRecord:true});
+            var index = $('#dg').datagrid('getRows').length - 1;
+            $('#dg').datagrid('expandRow', index);
+            $('#dg').datagrid('selectRow', index);
+        }
+    </script>
+    <style type="text/css">
+        form{
+            margin:0;
+            padding:0;
+        }
+        .dv-table td{
+            border:0;
+        }
+        .dv-table input{
+            border:1px solid #ccc;
+        }
+    </style>
+    
+</body>
+</html>
