@@ -61,7 +61,7 @@
                     ddv.panel({
                         border:false,
                         cache:true,
-                        href:'../../business2/index.php/home/Software/show_form?index='+index+'&RowIndex='+rowk.ID,
+                        href:'../../business2/index.php/home/Software/show_form?index='+index+'&RowIndex='+rowk.s_id,
                         onLoad:function(){
                             $('#dg').datagrid('fixDetailRowHeight',index);
                             $('#dg').datagrid('selectRow',index);
@@ -74,9 +74,9 @@
         });
         function saveItem(index){
             var row = $('#dg').datagrid('getRows')[index];
-            var url = row.isNewRecord ? 'save_user.php' : 'update_user.php?id='+row.ID;
+            var url = row.isNewRecord ? 'save' : 'update?id='+row.s_id;
             $('#dg').datagrid('getRowDetail',index).find('form').form('submit',{
-                url: '../../business/users/'+url,
+                url: '../../business2/index.php/home/Software/'+url,
                 onSubmit: function(){
                     console.log('this'+$(this).form('validate'));
                     return $(this).form('validate');

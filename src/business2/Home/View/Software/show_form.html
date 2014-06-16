@@ -1,20 +1,19 @@
 <form method="post">
      <table class="dv-table" style="width:100%;background:#fafafa;padding:5px;margin-top:5px;">
-        <tr>
-            <td>用户名</td>
-            <td><input id="User_name" name="User_name" class="easyui-validatebox" required="true" VALUE="<?PHP if($page_username != null){echo $page_username;} ?>"></td>
-            <td>密码</td>
-            <td><input id="User_password" name="User_password" class="easyui-validatebox" required="true" VALUE="<?PHP if($page_passwd != null){echo $page_passwd;} ?>"></td>
-            </br>
-            <td>管理员？</td>
-            <td><select class="easyui-combobox" name="admin" style="width:50px;">
-                <option value="true">是</option>
-                <option value="false">否</option>
-            </select></td>
-        </tr>
+         <tr><td>软件内部编号：</td><td>{$s_id}</td></tr>
+         <tr><td>软件名</td><td><input id="s_Title" name="s_Title" class="easyui-validatebox" required="true" VALUE="{$s_Title}"></td></tr>
+         <tr><td>软件大小：</td><td>{$s_size}</td></tr>
+         <tr><td>软件语言</td><td><input id="s_language" name="s_language" class="easyui-validatebox" required="true" VALUE="{$s_language}"></td></tr>
+         <tr><td>软件大小：</td><td>{$s_size}</td><td>下载次数：{$s_size}</td><td>评论次数：{$s_comment_times}</td></td></tr>
+         <tr><td>上传日期：</td><td>{$s_uploadtime_date}</td></tr>
+         <tr><td>官网地址</td><td><input id="s_offical_site" name="s_offical_site" class="easyui-validatebox" required="true" VALUE="{$s_offical_site}"></td></tr>
+         <tr><td>运行平台</td><td><input id="s_plateform" name="s_plateform" class="easyui-validatebox" required="true" VALUE="{$s_plateform}"></td></tr>
+         <tr><td>网盘分流地址</td><td><input id="s_URL_baidu" name="s_URL_baidu" class="easyui-validatebox" required="true" VALUE="{$s_URL_baidu}"></td></tr>
+         <tr><td>官网下载地址</td><td><input id="s_URL_offical" name="s_URL_offical" class="easyui-validatebox" required="true" VALUE="{$s_URL_offical}"></td></tr>
+         <tr><td>软件介绍</td><td><input id="s_Introduction" name="s_Introduction" class="easyui-validatebox" required="true" VALUE="{$s_Introduction}"></td></tr>
     </table>
     <div style="padding:5px 0;text-align:right;padding-right:30px">
-        <a href="#" class="easyui-linkbutton" iconCls="icon-save" plain="true" onclick="saveItem(<?php echo $_REQUEST['index'];?>)">Save</a>
-        <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" plain="true" onclick="cancelItem(<?php echo $_REQUEST['index'];?>)">Cancel</a>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-save" plain="true" onclick="saveItem({$index})">Save</a>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" plain="true" onclick="cancelItem({$index})">Cancel</a>
     </div>
 </form>
