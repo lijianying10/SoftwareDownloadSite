@@ -1,7 +1,7 @@
 <form method="post">
     <?php
-    $handle_index = $_GET['index'];
-    $handle_index++;
+
+    $handle_index = $_GET['RowIndex'];
     $page_username=null;
     $page_passwd=null;
     include '../conn.php';
@@ -10,6 +10,7 @@
         $page_username="$tbl_user[u_Name]";
         $page_passwd="$tbl_user[u_PWD]";
     }
+
     ?>
 
     <table class="dv-table" style="width:100%;background:#fafafa;padding:5px;margin-top:5px;">
@@ -17,7 +18,7 @@
             <td>用户名</td>
             <td><input id="User_name" name="User_name" class="easyui-validatebox" required="true" VALUE="<?PHP if($page_username != null){echo $page_username;} ?>"></td>
             <td>密码</td>
-            <td><input id="User_password" name="User_password" class="easyui-validatebox" required="true" VALUE="<?PHP if($page_passwd != null){echo $page_username;} ?>"></td>
+            <td><input id="User_password" name="User_password" class="easyui-validatebox" required="true" VALUE="<?PHP if($page_passwd != null){echo $page_passwd;} ?>"></td>
         </tr>
     </table>
     <div style="padding:5px 0;text-align:right;padding-right:30px">

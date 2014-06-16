@@ -2011,6 +2011,7 @@
       <column name="u_Basic_info" sqlType="TEXT" length="65535" precision="0" nullable="true" jdbcType="-1"/>
       <column name="u_preference" sqlType="TEXT" length="65535" precision="0" nullable="true" jdbcType="-1"/>
       <primary-key name="PRIMARY" columns="u_UID"/>
+      <index name="u_Name" unique="true" columns="u_Name"/>
     </table>
   </data-source>
 </component>
