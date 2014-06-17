@@ -110,4 +110,59 @@ class SoftwareController extends Controller {
             echo $e;
         }
     }
+    public function getUseful()
+    {
+        $Data = M('systemsetting');
+        $map['u_UID']=1;
+        $setting = $Data->where($map)->select();
+
+        $inputtt=I('post.data','');
+        if($inputtt == '')
+        {echo $setting[0]['list_useful'];}else{
+            try{
+                $setting[0]['list_useful'] = $inputtt; //修改
+                $Data->save($setting[0]);
+                echo '修改成功!';
+            }catch (Exception $e){
+                echo $e;
+            }
+        }
+
+    }
+    public function getRecommand()
+    {
+        $Data = M('systemsetting');
+        $map['u_UID']=1;
+        $setting = $Data->where($map)->select();
+
+        $inputtt=I('post.data','');
+        if($inputtt == '')
+        {echo $setting[0]['list_Recommand'];}else{
+            try{
+                $setting[0]['list_Recommand'] = $inputtt; //修改
+                $Data->save($setting[0]);
+                echo '修改成功!';
+            }catch (Exception $e){
+                echo $e;
+            }
+        }
+    }
+    public function getInstall()
+    {
+        $Data = M('systemsetting');
+        $map['u_UID']=1;
+        $setting = $Data->where($map)->select();
+
+        $inputtt=I('post.data','');
+        if($inputtt == '')
+        {echo $setting[0]['list_SoftWare_rank'];}else{
+            try{
+                $setting[0]['list_SoftWare_rank'] = $inputtt; //修改
+                $Data->save($setting[0]);
+                echo '修改成功!';
+            }catch (Exception $e){
+                echo $e;
+            }
+        }
+    }
 }
