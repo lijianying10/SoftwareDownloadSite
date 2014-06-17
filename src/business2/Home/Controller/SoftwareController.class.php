@@ -1,6 +1,8 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
+use Think\Exception;
+
 class SoftwareController extends Controller {
     public function test(){
         $Data = M('software');
@@ -16,9 +18,20 @@ class SoftwareController extends Controller {
 
     public function  getall()
     {
-        $Data = M('software');
-        $this->data = $Data->select();
-        $this->ajaxReturn($this->data);
+        $name = I('post.name','');
+        if($name == '')
+        {
+            $Data = M('software');
+            $this->data = $Data->select();
+            $this->ajaxReturn($this->data);
+        }
+        else{
+            $Data = M('software');
+            $map['s_Title'] = 't';
+            $getdata =  $Data->where("s_Title LIKE '%$name%'")->select();
+            $this->ajaxReturn($getdata);
+        }
+
     }
 
     public function show_form()
@@ -34,11 +47,33 @@ class SoftwareController extends Controller {
     }
     public function save()
     {
-        echo 'this is save';
-
-        var_dump(I('get.'));
-        echo '===================post=================';
-        var_dump(I('post.'));
+//        echo 'this is save';
+//
+//        var_dump(I('get.'));
+//        echo '===================post=================';
+//        var_dump(I('post.'));
+        try{
+            $Data = M('software');
+            $insertdata['s_Title']=I('post.s_Title');
+            $insertdata['s_size']=0;
+            $insertdata['s_language']=I('post.s_language');
+            $insertdata['s_download_times']=0;
+            $insertdata['s_comment_times']=0;
+            $insertdata['s_uploadtime_date']=date('Y-m-d H:i:s',time());
+            $insertdata['s_offical_site']=I('post.s_offical_site');
+            $insertdata['s_plateform']=I('post.s_plateform');
+            $insertdata['s_URL_baidu']=I('post.s_URL_baidu');
+            $insertdata['s_URL_offical']=I('post.s_URL_offical');
+            $insertdata['s_Introduction']=I('post.s_Introduction');
+            $insertdata['s_Comment']='{}';
+            $insertdata['s_other']='{}';
+//            var_dump($insertdata);
+            $Data->add($insertdata);
+            $Data->save();
+            echo '1';
+        }catch (Exception $e){
+            echo $e;
+        }
 
     }
     public function update()
@@ -63,6 +98,16 @@ class SoftwareController extends Controller {
         catch(Exception $e)
         {
             echo '0';
+        }
+    }
+    public function delete(){
+        try{
+            $Data = M('software');
+            $Data->where('s_id='.I('post.id'))->delete();
+            echo '1';
+        }catch (Exception $e)
+        {
+            echo $e;
         }
     }
 }

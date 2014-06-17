@@ -37,7 +37,7 @@
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newItem()">添加</a>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyItem()">删除</a>
         <span>用户名</span>
-        <input id="nameid" style="line-height:26px;border:1px solid #ccc">
+        <input id="search_name" style="line-height:26px;border:1px solid #ccc">
         <a href="#" class="easyui-linkbutton" plain="true" onclick="doSearch()">搜索</a>
     </div>
     <script type="text/javascript">
@@ -45,7 +45,7 @@
         function doSearch(){
             console.log('codehere');
             $('#dg').datagrid('reload',{
-                name: $('#nameid').val()
+                name: $('#search_name').val()
             });
         }
 
@@ -119,8 +119,8 @@
 
                         var index = $('#dg').datagrid('getRowIndex',row);
                         var rowk = $('#dg').datagrid('getRows')[index];
-                        $.post('../../business/users/destroy_user.php',
-                                {id:rowk.ID},
+                        $.post('../../business2/index.php/home/Software/delete',
+                                {id:rowk.s_id},
                                 function(data){
 
                                     if(data==1)

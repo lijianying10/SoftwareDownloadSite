@@ -26,17 +26,15 @@
       <file leaf-file-name="SoftwareController.class.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/business2/Home/Controller/SoftwareController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="21" selection-start="1932" selection-end="1932" vertical-scroll-proportion="0.71188474" vertical-offset="1327" max-vertical-offset="2190">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Softwaremanage.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/subpage/Softwaremanage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="77" selection-start="3381" selection-end="3381" vertical-scroll-proportion="-3.75" vertical-offset="2070" max-vertical-offset="5040">
-              <folding />
+            <state line="30" column="58" selection-start="908" selection-end="908" vertical-scroll-proportion="0.7202881" vertical-offset="0" max-vertical-offset="1080">
+              <folding>
+                <element signature="e#33#54#0" expanded="true" />
+                <element signature="e#127#527#0" expanded="false" />
+                <element signature="e#987#1298#0" expanded="false" />
+                <element signature="e#1303#2454#0" expanded="false" />
+                <element signature="e#2459#3241#0" expanded="false" />
+                <element signature="e#3246#3476#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,7 +50,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/admin/subpage/s2.html" />
-        <option value="$PROJECT_DIR$/business/conn.php" />
         <option value="$PROJECT_DIR$/business/users/destroy_user.php" />
         <option value="$PROJECT_DIR$/business/users/save_user.php" />
         <option value="$PROJECT_DIR$/admin/subpage/usermanage.html" />
@@ -67,13 +64,14 @@
         <option value="$PROJECT_DIR$/business2/Home/Controller/UserController.class.php" />
         <option value="$PROJECT_DIR$/business2/Home/Controller/SoftController.class .php" />
         <option value="$PROJECT_DIR$/business2/Home/Model/SoftwareModel.class.php" />
-        <option value="db-console:/efc56a2/ad2b7fdc-e372-4440-9944-0c1ad474aa23/" />
         <option value="$PROJECT_DIR$/admin/index.html" />
         <option value="$PROJECT_DIR$/business2/Home/View/test.html" />
         <option value="$PROJECT_DIR$/business2/Home/View/Public/test.html" />
         <option value="$PROJECT_DIR$/business2/Home/View/Software/gettpl.html" />
         <option value="$PROJECT_DIR$/business2/Home/View/Software/show_form.html" />
+        <option value="db-console:/efc56a2/ad2b7fdc-e372-4440-9944-0c1ad474aa23/" />
         <option value="$PROJECT_DIR$/admin/subpage/Softwaremanage.html" />
+        <option value="$PROJECT_DIR$/business/conn.php" />
         <option value="$PROJECT_DIR$/business2/Home/Controller/SoftwareController.class.php" />
       </list>
     </option>
@@ -157,24 +155,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Runtime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="business2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -224,54 +204,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Software" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="business2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="business2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -307,43 +239,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="business" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="business2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="business" />
+              <option name="myItemId" value="Home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="business" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Software" />
+              <option name="myItemId" value="Common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -358,24 +262,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subpage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -451,50 +337,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13312034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18157615" sideWeight="0.4991708" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17465389" sideWeight="0.4991708" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13045794" sideWeight="0.50082916" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13312034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25239617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -515,15 +380,47 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/business2/Home/Controller/SoftwareController.class.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="21" selection-start="1932" selection-end="1932" vertical-scroll-proportion="0.0" vertical-offset="1327" max-vertical-offset="2190">
+          <folding>
+            <element signature="e#33#54#0" expanded="true" />
+            <element signature="e#127#527#0" expanded="false" />
+            <element signature="e#987#1298#0" expanded="false" />
+            <element signature="e#1303#2454#0" expanded="false" />
+            <element signature="e#2459#3241#0" expanded="false" />
+            <element signature="e#3246#3476#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/subpage/Softwaremanage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="77" selection-start="3381" selection-end="3381" vertical-scroll-proportion="0.0" vertical-offset="2070" max-vertical-offset="5040">
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business2/Home/Controller/SoftwareController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="25" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
-          <folding />
+          <folding>
+            <element signature="e#33#54#0" expanded="true" />
+            <element signature="e#127#527#0" expanded="false" />
+            <element signature="e#987#1298#0" expanded="false" />
+            <element signature="e#1303#2454#0" expanded="false" />
+            <element signature="e#2459#3241#0" expanded="false" />
+            <element signature="e#3246#3476#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/subpage/Softwaremanage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="51" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="5040">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -539,23 +436,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/business/users/show_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="164" selection-start="683" selection-end="831" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="1230">
-          <folding />
-        </state>
+        <state line="20" column="164" selection-start="683" selection-end="831" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="1230" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/business2/Home/Controller/SoftwareController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="35" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-          <folding />
+          <folding>
+            <element signature="e#33#54#0" expanded="true" />
+            <element signature="e#127#527#0" expanded="false" />
+            <element signature="e#987#1298#0" expanded="false" />
+            <element signature="e#1303#2454#0" expanded="false" />
+            <element signature="e#2459#3241#0" expanded="false" />
+            <element signature="e#3246#3476#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/business/users/show_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="59" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1230">
-          <folding />
-        </state>
+        <state line="25" column="59" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1230" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/subpage/usermanage.html">
@@ -585,9 +485,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/business/users/show_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="40" selection-start="371" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="960">
-          <folding />
-        </state>
+        <state line="10" column="40" selection-start="371" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="960" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/subpage/usermanage.html">
@@ -616,11 +514,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../db/datas.sql">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="0" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="480" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../db/mysql.sql">
@@ -629,26 +527,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../db/datas.sql">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="0" selection-end="651" vertical-scroll-proportion="0.46692607" vertical-offset="0" max-vertical-offset="514" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/subpage/s2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="9" selection-start="74" selection-end="74" vertical-scroll-proportion="0.33395177" vertical-offset="0" max-vertical-offset="539" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/conn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="9" selection-start="100" selection-end="100" vertical-scroll-proportion="0.39106146" vertical-offset="0" max-vertical-offset="537" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/conn_getuser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/business/users/destroy_user.php">
@@ -659,11 +547,6 @@
     <entry file="file://$PROJECT_DIR$/business/users/update_user.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="2" selection-start="319" selection-end="319" vertical-scroll-proportion="0.7442748" vertical-offset="0" max-vertical-offset="570" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/users/save_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="2" selection-start="250" selection-end="250" vertical-scroll-proportion="0.39106146" vertical-offset="0" max-vertical-offset="537" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/subpage/usermanage.html">
@@ -696,24 +579,9 @@
         <state line="4" column="36" selection-start="117" selection-end="117" vertical-scroll-proportion="-3.0769231" vertical-offset="0" max-vertical-offset="330" />
       </provider>
     </entry>
-    <entry file="dbDummy://db-console:/efc56a2/ad2b7fdc-e372-4440-9944-0c1ad474aa23/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="45" selection-start="999" selection-end="999" vertical-scroll-proportion="-0.2047532" vertical-offset="982" max-vertical-offset="1590" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="277" column="22" selection-start="13693" selection-end="13693" vertical-scroll-proportion="0.1509434" vertical-offset="8190" max-vertical-offset="9450" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/users/get_users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="340" selection-end="340" vertical-scroll-proportion="0.29268292" vertical-offset="0" max-vertical-offset="1020" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/Software/show_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="475" selection-end="475" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1230" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/business2/Home/View/Public/test.html">
@@ -721,9 +589,62 @@
         <state line="6" column="0" selection-start="65" selection-end="89" vertical-scroll-proportion="0.21608643" vertical-offset="0" max-vertical-offset="833" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/business/users/show_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="164" selection-start="683" selection-end="831" vertical-scroll-proportion="0.73170733" vertical-offset="0" max-vertical-offset="1230" />
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/efc56a2/ad2b7fdc-e372-4440-9944-0c1ad474aa23/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="514" selection-end="2284" vertical-scroll-proportion="0.3442623" vertical-offset="381" max-vertical-offset="2670">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/subpage/Softwaremanage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="45" selection-start="2033" selection-end="2033" vertical-scroll-proportion="-10.769231" vertical-offset="990" max-vertical-offset="5040">
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/conn_getuser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="-4.6153846" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/users/get_users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="58" selection-start="548" selection-end="581" vertical-scroll-proportion="-13.846154" vertical-offset="0" max-vertical-offset="1020">
+          <folding>
+            <marker date="1402880944837" expanded="true" signature="-1:-1" placeholder="SELECT `u_UI..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/users/save_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="2" selection-start="250" selection-end="250" vertical-scroll-proportion="-5.3846154" vertical-offset="0" max-vertical-offset="390">
+          <folding>
+            <marker date="1402846592930" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/Software/show_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="5" selection-start="475" selection-end="475" vertical-scroll-proportion="-0.7692308" vertical-offset="360" max-vertical-offset="1230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/business2/Home/View/Software/show_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="51" selection-start="727" selection-end="727" vertical-scroll-proportion="0.29268292" vertical-offset="0" max-vertical-offset="820">
+        <state line="6" column="63" selection-start="557" selection-end="566" vertical-scroll-proportion="-4.6153846" vertical-offset="0" max-vertical-offset="720">
           <folding>
             <element signature="n#style#0;n#table#0;n#form#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#form#0;n#!!top" expanded="true" />
@@ -731,24 +652,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/users/show_form.php">
+    <entry file="file://$PROJECT_DIR$/business/conn.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="164" selection-start="683" selection-end="831" vertical-scroll-proportion="0.73170733" vertical-offset="0" max-vertical-offset="1230">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/subpage/Softwaremanage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="77" selection-start="3381" selection-end="3381" vertical-scroll-proportion="-3.75" vertical-offset="2070" max-vertical-offset="5040">
+        <state line="6" column="0" selection-start="87" selection-end="226" vertical-scroll-proportion="0.21608643" vertical-offset="0" max-vertical-offset="833">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/business2/Home/Controller/SoftwareController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="21" selection-start="1932" selection-end="1932" vertical-scroll-proportion="0.71188474" vertical-offset="1327" max-vertical-offset="2190">
-          <folding />
+        <state line="30" column="58" selection-start="908" selection-end="908" vertical-scroll-proportion="0.7202881" vertical-offset="0" max-vertical-offset="1080">
+          <folding>
+            <element signature="e#33#54#0" expanded="true" />
+            <element signature="e#127#527#0" expanded="false" />
+            <element signature="e#987#1298#0" expanded="false" />
+            <element signature="e#1303#2454#0" expanded="false" />
+            <element signature="e#2459#3241#0" expanded="false" />
+            <element signature="e#3246#3476#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
