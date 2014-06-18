@@ -8,7 +8,7 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link href="./b3/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 20px;
@@ -99,34 +99,37 @@
 
     <div class="container">
 
-      <div class="masthead">
-        <h3 class="muted">Softwares</h3>
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="container">
-              <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">search</a></li>
-                <li><a href="#">Download logs</a></li>
-                <li><a href="#">About</a></li>
-                <li><a onclick="logout()" href="#">Logout</a></li>
-              </ul>
-            </div>
-          </div>
-        </div><!-- /.navbar -->
-      </div>
 
+        <h1>Software site searching page</h1>
       <!-- Jumbotron -->
       <div class="jumbotron">
-          <div class="input-append">
-
+          <div class="input-group">
+              <input id="tb_search" type="text" class="form-control">
+              <span class="input-group-addon"><a onclick="do_search()" href="#">search</a></span>
           </div>
-          <form class="navbar-form pull-left">
-              <input type="text" class="span2">
-              <button type="submit" class="btn-small">Submit</button>
-          </form>
       </div>
+        <div id="kkk">
 
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">search result</div>
+
+                <!-- Table -->
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Software name</th>
+                        <th>update time</th>
+                        <th>view detail</th>
+                    </tr>
+                    </thead>
+                    <tbody id="result_body">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
 
       <div class="footer">
@@ -138,22 +141,33 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./assets/js/jquery.js"></script>
-    <script src="./assets/js/bootstrap-transition.js"></script>
-    <script src="./assets/js/bootstrap-alert.js"></script>
-    <script src="./assets/js/bootstrap-modal.js"></script>
-    <script src="./assets/js/bootstrap-dropdown.js"></script>
-    <script src="./assets/js/bootstrap-scrollspy.js"></script>
-    <script src="./assets/js/bootstrap-tab.js"></script>
-    <script src="./assets/js/bootstrap-tooltip.js"></script>
-    <script src="./assets/js/bootstrap-popover.js"></script>
-    <script src="./assets/js/bootstrap-button.js"></script>
-    <script src="./assets/js/bootstrap-collapse.js"></script>
-    <script src="./assets/js/bootstrap-carousel.js"></script>
-    <script src="./assets/js/bootstrap-typeahead.js"></script>
+    <script src="./admin/js/jquery-1.10.2.js"></script>
+    <script src="./b3/js/bootstrap.js"></script>
     <script src="./admin/js/my.js"></script>
 
+
     <script language="JavaScript">
+        var kdata;
+        function do_search()
+        {
+            var condation=document.getElementById('tb_search').value;
+            $.post('http://localhost/sds/business2/index.php/home/Software/getall',{name:condation},function(data){
+
+                kdata=data;
+                var htmlresult='';
+                for(var i = 0 ; i < data.length ; i++)
+                {
+                    htmlresult += "<tr>"+
+                            "<td>"+(i+1)+"</td>"+
+                    "<td>"+data[i].s_Title+"</td>"+
+                    "<td>"+data[i].s_uploadtime_date+"</td>"+
+                    "<td><a href='http://localhost/sds/business2/index.php/home/Software/view_detail?index="+data[i].s_id+"'>detail page</a></td>"
+                    "</tr>";
+                }
+                console.log(htmlresult);
+                result_body.innerHTML=htmlresult;
+            });
+        }
     </script>
 
   </body>

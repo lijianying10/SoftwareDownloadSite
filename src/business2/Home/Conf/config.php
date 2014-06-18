@@ -8,4 +8,7 @@ return array(
     'DB_PWD'    => '1', // 密码
     'DB_PORT'   => 3306, // 端口
     'DB_PREFIX' => 'tbl_', // 数据库表前缀
+
+    '__ROOT__'      =>  __ROOT__,
+    '__PUBLIC__'    =>  __ROOT__,
 );
