@@ -106,7 +106,7 @@
             <div class="container">
               <ul class="nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">search</a></li>
+                <li><a href="search.html">search</a></li>
                 <li><a href="#">Download logs</a></li>
                 <li><a href="#">About</a></li>
                 <li><a onclick="logout()" href="#">Logout</a></li>
@@ -120,7 +120,7 @@
       <div class="jumbotron">
         <h1>welcome <text id="lbl_user"></text></h1>
         <p class="lead">Wants some software for insprie? RU ready?</p>
-        <a class="btn btn-large btn-success" href="#">SEARCH</a>
+        <a class="btn btn-large btn-success" href="search.html">SEARCH</a>
       </div>
 
       <hr>
@@ -129,65 +129,64 @@
       <h2 style="color: green">Top Download</h2>
       <div class="row-fluid">
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2><text id="top1title"></text></h2>
+          <p><text id="top1detail"></text></p>
+          <p><a class="btn" onclick="view_detail('t0')" href="#">View details &raquo;</a></p>
         </div>
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2><text id="top2title"></text></h2>
+          <p><text id="top2detail"></text></p>
+          <p><a class="btn" onclick="view_detail('t1')" href="#">View details &raquo;</a></p>
        </div>
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2><text id="top3title"></text></h2>
+          <p><text id="top3detail"></text></p>
+          <p><a class="btn" onclick="view_detail('t2')" href="#">View details &raquo;</a></p>
         </div>
       </div>
       <hr>
 
       <!-- Example row of columns -->
-      <h2 style="color: red">Download rank</h2>
-      <div class="row-fluid">
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+      <h2 style="color: red">Must install</h2>
+        <div class="row-fluid">
+            <div class="span4">
+                <h2><text id="must1title"></text></h2>
+                <p><text id="must1detail"></text></p>
+                <p><a class="btn" onclick="view_detail('m0')" href="#">View details &raquo;</a></p>
+            </div>
+            <div class="span4">
+                <h2><text id="must2title"></text></h2>
+                <p><text id="must2detail"></text></p>
+                <p><a class="btn" onclick="view_detail('m1')" href="#">View details &raquo;</a></p>
+            </div>
+            <div class="span4">
+                <h2><text id="must3title"></text></h2>
+                <p><text id="must3detail"></text></p>
+                <p><a class="btn" onclick="view_detail('m2')" href="#">View details &raquo;</a></p>
+            </div>
         </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-      </div>
-      <hr>
+        <hr>
 
       <!-- Example row of columns -->
       <h2 style="color: green">Recommand software</h2>
-      <div class="row-fluid">
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+        <div class="row-fluid">
+            <div class="span4">
+                <h2><text id="recommand1title"></text></h2>
+                <p><text id="recommand1detail"></text></p>
+                <p><a class="btn" onclick="view_detail('r0')" href="#">View details &raquo;</a></p>
+            </div>
+            <div class="span4">
+                <h2><text id="recommand2title"></text></h2>
+                <p><text id="recommand2detail"></text></p>
+                <p><a class="btn" onclick="view_detail('r1')" href="#">View details &raquo;</a></p>
+            </div>
+            <div class="span4">
+                <h2><text id="recommand3title"></text></h2>
+                <p><text id="recommand3detail"></text></p>
+                <p><a class="btn" onclick="view_detail('r2')" href="#">View details &raquo;</a></p>
+            </div>
         </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-      </div>
-
-      <hr>
+        <hr>
 
       <div class="footer">
         <p>&copy; Jianying Li 2014</p>
@@ -225,11 +224,61 @@
         }
 
         document.getElementById('lbl_user').innerHTML=getCookie('UName');
+        var global_index_ids;
+        load_lists();
+
 
         function logout()
         {
             delCookie('UName');
             location.href='index.html';
+        }
+        function byid(id)
+        {
+            return document.getElementById(id);
+        }
+
+
+
+        function load_lists()
+        {
+            $.post("http://localhost/sds/business2/index.php/home/Software/indexdetail",{},function(data)
+            {
+                console.log(data);
+                byid('top1title').innerHTML=data['top'][0][0].s_Title;
+                byid('top2title').innerHTML=data['top'][1][0].s_Title;
+                byid('top3title').innerHTML=data['top'][2][0].s_Title;
+                byid('top1detail').innerHTML=data['top'][0][0].s_Introduction;
+                byid('top2detail').innerHTML=data['top'][1][0].s_Introduction;
+                byid('top3detail').innerHTML=data['top'][2][0].s_Introduction;
+                byid('must1title').innerHTML=data['must'][0][0].s_Title;
+                byid('must2title').innerHTML=data['must'][1][0].s_Title;
+                byid('must3title').innerHTML=data['must'][2][0].s_Title;
+                byid('must1detail').innerHTML=data['must'][0][0].s_Introduction;
+                byid('must2detail').innerHTML=data['must'][1][0].s_Introduction;
+                byid('must3detail').innerHTML=data['must'][2][0].s_Introduction;
+                byid('recommand1title').innerHTML=data['recommand'][0][0].s_Title;
+                byid('recommand2title').innerHTML=data['recommand'][1][0].s_Title;
+                byid('recommand3title').innerHTML=data['recommand'][2][0].s_Title;
+                byid('recommand1detail').innerHTML=data['recommand'][0][0].s_Introduction;
+                byid('recommand2detail').innerHTML=data['recommand'][1][0].s_Introduction;
+                byid('recommand3detail').innerHTML=data['recommand'][2][0].s_Introduction;
+                global_index_ids = {t0:data['top'][0][0].s_id,
+                    t1:data['top'][1][0].s_id,
+                    t2:data['top'][2][0].s_id,
+                    m0:data['must'][0][0].s_id,
+                    m1:data['must'][1][0].s_id,
+                    m2:data['must'][2][0].s_id,
+                    r0:data['recommand'][0][0].s_id,
+                    r1:data['recommand'][1][0].s_id,
+                    r2:data['recommand'][2][0].s_id}
+                console.log(global_index_ids);
+            })
+        }
+        function view_detail(para)
+        {
+//            console.log('business2/index.php/home/Software/view_detail?index='+global_index_ids[para]);
+            window.location.href='business2/index.php/home/Software/view_detail?index='+global_index_ids[para];
         }
     </script>
 

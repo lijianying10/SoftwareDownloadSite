@@ -165,4 +165,46 @@ class SoftwareController extends Controller {
             }
         }
     }
+    public function indexdetail()
+    {
+        $Data = M('systemsetting');
+        $map['u_UID']=1;
+        $setting = $Data->where($map)->select();
+//        var_dump($setting);
+        //recommand
+        $current_list = explode(',',$setting[0]['list_Recommand']);
+        $result['recommand'][]=$this->getSingleSoftwareByID($current_list[0]);
+        $result['recommand'][]=$this->getSingleSoftwareByID($current_list[1]);
+        $result['recommand'][]=$this->getSingleSoftwareByID($current_list[2]);
+        $current_list = explode(',',$setting[0]['list_SoftWare_rank']);
+        $result['top'][]=$this->getSingleSoftwareByID($current_list[0]);
+        $result['top'][]=$this->getSingleSoftwareByID($current_list[1]);
+        $result['top'][]=$this->getSingleSoftwareByID($current_list[2]);
+        $current_list = explode(',',$setting[0]['list_useful']);
+        $result['must'][]=$this->getSingleSoftwareByID($current_list[0]);
+        $result['must'][]=$this->getSingleSoftwareByID($current_list[1]);
+        $result['must'][]=$this->getSingleSoftwareByID($current_list[2]);
+        $this->ajaxreturn($result);
+
+//        var_dump($result);
+    }
+
+    function getSingleSoftwareByID($id)
+    {
+        $Data2 = M('software');
+        $res =  $Data2->where('s_id='.$id)->select();
+        return $res;
+    }
+
+    function  view_detail()
+    {
+        $index = I('get.index');
+        $Data = M('software');
+        $map['s_id']=$index;
+        $map = $Data->where($map)->select();
+//        var_dump($map);
+        $this->assign($map[0]);
+        $this->display();
+    }
+
 }
