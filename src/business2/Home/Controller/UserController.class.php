@@ -1,6 +1,8 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
+use Think\Exception;
+
 class UserController extends Controller {
     public function test(){
         $Data = M('User'); // 实例化Data数据模型
@@ -45,5 +47,28 @@ class UserController extends Controller {
         }
 //        var_dump($this->data);
 //        var_dump($u_name);
+    }
+
+    public  function register(){
+        try{
+            $Data=M('user');
+            $newuser['u_Name']=$_POST['email'];
+            $newuser['u_PWD']=$_POST['pwd'];
+            $newuser['u_Basic_info']='{}';
+            $newuser['u_preference']='{}';
+            $Data->add($newuser);
+            $Data->save();
+            $return['state']='success';
+            $return['info']='注册成功';
+
+            $this->ajaxReturn($return);
+        }catch (Exception $e)
+        {
+            $return['state']='success';
+            $return['info']=$e;
+
+            $this->ajaxReturn($return);
+        }
+
     }
 }
